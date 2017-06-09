@@ -20,26 +20,40 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    var prevNum: Double = 0
+    var currentNum: Double = 0
+    var isFirstNum = true
+    var operation: Operation = .empty
+    
     @IBOutlet weak var Display: UILabel!
     
     @IBAction func AC_C(_ sender: Any) {
     }
     @IBAction func Sign(_ sender: Any) {
+        
     }
     @IBAction func Percent(_ sender: Any) {
+        operation = .percent
     }
     @IBAction func Multiplication(_ sender: Any) {
+        operation = .multiplication
     }
     @IBAction func Division(_ sender: Any) {
+        operation = .division
     }
     @IBAction func Addition(_ sender: Any) {
+        operation = .addition
     }
     @IBAction func Subtraction(_ sender: Any) {
+        operation = .subtraction
     }
     @IBAction func Dot(_ sender: Any) {
     }
     
-    @IBAction func Nine(_ sender: Any) {
+    @IBAction func Nine(_ sender: UIButton) {
+        if isFirstNum {
+            
+        }
     }
     @IBAction func Eight(_ sender: Any) {
     }
