@@ -13,7 +13,6 @@ enum Operation{
     case subtraction
     case multiplication
     case division
-    case percent
     case empty
 }
 
@@ -27,13 +26,23 @@ func subtract(from original: Double, value: Double) -> Double {
     return result
 }
 
-func multipy(base: Double, by amount: Double) -> Double {
+func multiply(base: Double, by amount: Double) -> Double {
     let result = base * amount
     return result
 }
 
 func divide(base: Double, by amunt: Double) -> Double {
     let result = base / amunt
+    return result
+}
+
+func percent(for portion: Double) -> Double {
+    let result = portion * 0.01
+    return result
+}
+
+func percent(with base: Double, portion: Double) -> Double {
+    let result = base * (portion * 0.01)
     return result
 }
 
