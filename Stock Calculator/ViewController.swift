@@ -59,137 +59,45 @@ class ViewController: UIViewController {
     @IBOutlet weak var Display: UILabel!
     
     @IBAction func AC_C(_ sender: UIButton) {
-        if sender.currentTitle! == "C" {
-            Display.text = "0"
-            isFirstNum = true
-        } else {
-            Display.text = "0"
-            prevNum = 0
-            currentNum = 0
-            isFirstNum = true
-            operation = .empty
-        }
-        updateACC()
-        
     }
     @IBAction func Sign(_ sender: Any) {
-        updateACC()
-        
-    }
-    @IBAction func Percent(_ sender: Any) {
-        updateACC()
-        
-    }
-    @IBAction func Multiplication(_ sender: Any) {
-        
-        if !isFirstNum {
-            shiftNumbers()
-        }
-        operation = .multiplication
-        updateACC()
-    }
-    @IBAction func Division(_ sender: Any) {
-        if !isFirstNum {
-            shiftNumbers()
-        }
-        operation = .division
-        updateACC()
-    }
-    @IBAction func Addition(_ sender: Any) {
-        if !isFirstNum {
-            shiftNumbers()
-        }
-        operation = .addition
-        updateACC()
-    }
-    @IBAction func Subtraction(_ sender: Any) {
-        if !isFirstNum {
-            currentNum = Double(Display.text!)!
-            shiftNumbers()
-        }
-        operation = .subtraction
-        updateACC()
     }
     @IBAction func Dot(_ sender: Any) {
-        updateACC()
+    }
+    @IBAction func Percent(_ sender: Any) {
     }
     
-    @IBAction func Nine(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
+    @IBAction func Multiplication(_ sender: Any) {
     }
-    @IBAction func Eight(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
+    @IBAction func Division(_ sender: Any) {
     }
-    @IBAction func Seven(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
+    @IBAction func Addition(_ sender: Any) {
     }
-    @IBAction func Six(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
+    @IBAction func Subtraction(_ sender: Any) {
     }
-    @IBAction func Five(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
-    }
-    @IBAction func Four(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
-    }
-    @IBAction func Three(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
-    }
-    @IBAction func Two(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
+    
+    @IBAction func Zero(_ sender: UIButton) {
     }
     @IBAction func One(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
     }
-    @IBAction func Zero(_ sender: UIButton) {
-        numberInput(sender: sender)
-        updateACC()
+    @IBAction func Two(_ sender: UIButton) {
+    }
+    @IBAction func Three(_ sender: UIButton) {
+    }
+    @IBAction func Four(_ sender: UIButton) {
+    }
+    @IBAction func Five(_ sender: UIButton) {
+    }
+    @IBAction func Six(_ sender: UIButton) {
+    }
+    @IBAction func Seven(_ sender: UIButton) {
+    }
+    @IBAction func Eight(_ sender: UIButton) {
+    }
+    @IBAction func Nine(_ sender: UIButton) {
     }
     
     @IBAction func Equal(_ sender: UIButton) {
-        var result: Double
-        currentNum = Double(Display.text!)!
-        if isFirstNum{
-            switch operation {
-            case .addition:
-                result = add(to: prevNum, value: prevNum)
-            case .subtraction:
-                result = subtract(from: prevNum, value: prevNum)
-            case .multiplication:
-                result = multiply(base: prevNum, by: prevNum)
-            case .division:
-                result = divide(base: prevNum, by: prevNum)
-            case .empty:
-                result = prevNum
-            }
-        } else {
-            switch operation {
-            case .addition:
-                result = add(to: prevNum, value: currentNum)
-            case .subtraction:
-                result = subtract(from: prevNum, value: currentNum)
-            case .multiplication:
-                result = multiply(base: prevNum, by: currentNum)
-            case .division:
-                result = divide(base: prevNum, by: currentNum)
-            case .empty:
-                result = currentNum
-            }
-        }
-        
-        updateDisplay(with: String(result))
-        isFirstNum = true
-        updateACC()
     }
-    
 }
 
