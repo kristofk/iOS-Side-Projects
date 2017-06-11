@@ -441,6 +441,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
+                        <outlet property="AC_C" destination="aP6-eP-X2T" id="G57-hJ-5XO"/>
                         <outlet property="Display" destination="emh-MZ-OjM" id="rxh-cA-9TF"/>
                     </connections>
                 </viewController>
