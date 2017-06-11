@@ -61,6 +61,7 @@ class ViewController: UIViewController {
         }
         Display.text = "0"
         updateACC()
+        
     }
     
     @IBAction func Sign(_ sender: Any) {
