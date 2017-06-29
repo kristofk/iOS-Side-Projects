@@ -14,6 +14,7 @@
 		358EB92D1F0511D000383D67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358EB92B1F0511D000383D67 /* LaunchScreen.storyboard */; };
 		358EB9541F05257500383D67 /* ColorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358EB9521F05257500383D67 /* ColorVC.swift */; };
 		358EB9551F05257500383D67 /* ColorVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358EB9531F05257500383D67 /* ColorVC.xib */; };
+		358EB9571F0543D400383D67 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358EB9561F0543D400383D67 /* Extensions.swift */; };
 		5661325FACCCEAA11A4E5D87 /* Pods_ID_Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF23AA8102A4CB466D4B111B /* Pods_ID_Color.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		358EB92E1F0511D000383D67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		358EB9521F05257500383D67 /* ColorVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorVC.swift; sourceTree = "<group>"; };
 		358EB9531F05257500383D67 /* ColorVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorVC.xib; sourceTree = "<group>"; };
+		358EB9561F0543D400383D67 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		4281E2517FE7E3C383E2622F /* Pods-ID Color.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ID Color.release.xcconfig"; path = "Pods/Target Support Files/Pods-ID Color/Pods-ID Color.release.xcconfig"; sourceTree = "<group>"; };
 		8B2F5A45FF7D17D7EC020A7E /* Pods-ID Color.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ID Color.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ID Color/Pods-ID Color.debug.xcconfig"; sourceTree = "<group>"; };
 		EF23AA8102A4CB466D4B111B /* Pods_ID_Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ID_Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +71,7 @@
 				358EB9241F0511D000383D67 /* ViewController.swift */,
 				358EB9521F05257500383D67 /* ColorVC.swift */,
 				358EB9531F05257500383D67 /* ColorVC.xib */,
+				358EB9561F0543D400383D67 /* Extensions.swift */,
 				358EB9261F0511D000383D67 /* Main.storyboard */,
 				358EB9291F0511D000383D67 /* Assets.xcassets */,
 				358EB92B1F0511D000383D67 /* LaunchScreen.storyboard */,
@@ -222,6 +225,7 @@
 				358EB9251F0511D000383D67 /* ViewController.swift in Sources */,
 				358EB9231F0511D000383D67 /* AppDelegate.swift in Sources */,
 				358EB9541F05257500383D67 /* ColorVC.swift in Sources */,
+				358EB9571F0543D400383D67 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
