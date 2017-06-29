@@ -27,7 +27,9 @@ class ColorVC: UIViewController {
     
     @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            let position = sender.location(in: imageDisplay)
+            let location = sender.location(in: imageDisplay)
+            let widthFactor = image.size.width / imageDisplay.frame.width
+            let heightFactor = image.size.height / imageDisplay.frame.height
         }
     }
     
@@ -52,6 +54,8 @@ class ColorVC: UIViewController {
         
         imageDisplay.image = image
         xButton.setImage(#imageLiteral(resourceName: "cancel"), for: .normal)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
