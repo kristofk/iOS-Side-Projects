@@ -11,16 +11,18 @@ import SwiftyCam
 
 class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        cameraDelegate = self
-        
+    func addCaptureButton() {
         let buttonFrame = CGRect(x: view.frame.midX - 37.5, y: view.frame.height - 100.0, width: 75.0, height: 75.0)
         let captureButton = SwiftyCamButton(frame: buttonFrame)
         self.view.addSubview(captureButton)
         captureButton.setImage(#imageLiteral(resourceName: "focus"), for: .normal)
         captureButton.delegate = self
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        cameraDelegate = self
+        addCaptureButton()
     }
 
     override func didReceiveMemoryWarning() {
