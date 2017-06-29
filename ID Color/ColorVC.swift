@@ -16,7 +16,14 @@ class ColorVC: UIViewController {
     @IBOutlet var greenValue: UILabel!
     @IBOutlet var blueValue: UILabel!
     
+    func removeSubView() {
+        let remView = self.view.viewWithTag(0)
+        remView?.removeFromSuperview()
+    }
     @IBAction func cancelTap(_ sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+            removeSubView()
+        }
     }
     
     @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
