@@ -27,7 +27,7 @@ class ColorVC: UIViewController {
     
     @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
-            print("imageDisplay tap")
+            let position = sender.location(in: imageDisplay)
         }
     }
     
