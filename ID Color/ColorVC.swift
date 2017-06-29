@@ -30,6 +30,21 @@ class ColorVC: UIViewController {
             let location = sender.location(in: imageDisplay)
             let widthFactor = image.size.width / imageDisplay.frame.width
             let heightFactor = image.size.height / imageDisplay.frame.height
+            
+            let scaledWidth = location.x * widthFactor
+            let scaledHeight = location.y * heightFactor
+            let scaledLocation = CGPoint(x: scaledWidth, y: scaledHeight)
+            
+            let colorAtLocation = image.getPixelColor(pos: scaledLocation)
+            let rgbValues = colorAtLocation.rgb()
+            let rValue = rgbValues!.red
+            let gValue = rgbValues!.green
+            let bValue = rgbValues!.blue
+            redValue.text = "\(String(describing: rValue))"
+            greenValue.text = "\(String(describing: gValue))"
+            blueValue.text = "\(String(describing: bValue))"
+            
+            colorViewer.backgroundColor = colorAtLocation
         }
     }
     
@@ -54,8 +69,9 @@ class ColorVC: UIViewController {
         
         imageDisplay.image = image
         xButton.setImage(#imageLiteral(resourceName: "cancel"), for: .normal)
-        
-        
+//        print("Image size in points: \(image.size.width) x \(image.size.height)")
+//        print("Image size in pixels: \(image.size.width * image.scale) x \(image.size.height * image.scale)")
+//        print("Image display size: \(imageDisplay.frame.width) x \(imageDisplay.frame.height)")
     }
 
     override func didReceiveMemoryWarning() {
