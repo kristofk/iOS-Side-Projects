@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwiftyCam
 
-class ViewController: UIViewController {
+class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
