@@ -20,6 +20,7 @@ class ColorVC: UIViewController {
     @IBOutlet var blueValue: UILabel!
     @IBOutlet var cancelView: UIImageView!
     @IBOutlet var xButton: UIButton!
+    @IBOutlet var saveButton: UIButton!
     let image: UIImage
     
     
@@ -52,6 +53,19 @@ class ColorVC: UIViewController {
         removeSubView()
     }
     
+    @IBAction func save(_ sender: UIButton) {
+        let imageData = UIImageJPEGRepresentation(imageDisplay.image!, 0)
+        let compressedJPGImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+        
+        let alert = UIAlertView(title: "Wow",
+                                message: "Your image has been saved to Photo Library!",
+                                delegate: nil,
+                                cancelButtonTitle: "Ok")
+        alert.show()
+    }
+    
+    
     // MARK: - init
     init(image: UIImage) {
         self.image = image
@@ -69,9 +83,7 @@ class ColorVC: UIViewController {
         
         imageDisplay.image = image
         xButton.setImage(#imageLiteral(resourceName: "cancel"), for: .normal)
-//        print("Image size in points: \(image.size.width) x \(image.size.height)")
-//        print("Image size in pixels: \(image.size.width * image.scale) x \(image.size.height * image.scale)")
-//        print("Image display size: \(imageDisplay.frame.width) x \(imageDisplay.frame.height)")
+        saveButton.setImage(#imageLiteral(resourceName: "save"), for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
