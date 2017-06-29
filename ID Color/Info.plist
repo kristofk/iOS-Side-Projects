@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>The camera is used to take pictures of the subject. It is essential for this app.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>You don't need this.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>In case you want to select a picture or save a picture to your photo library.</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
