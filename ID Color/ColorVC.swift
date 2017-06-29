@@ -15,6 +15,7 @@ class ColorVC: UIViewController {
     @IBOutlet var redValue: UILabel!
     @IBOutlet var greenValue: UILabel!
     @IBOutlet var blueValue: UILabel!
+    let image: UIImage
     
     func removeSubView() {
         let remView = self.view.viewWithTag(0)
@@ -27,6 +28,8 @@ class ColorVC: UIViewController {
     }
     
     @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
+        if sender.state == .ended {
+        }
     }
     
     
@@ -34,12 +37,19 @@ class ColorVC: UIViewController {
     
     
     
-    
+    init(image: UIImage) {
+        self.image = image
+        super.init(nibName: nil, bundle: nil)
+    }
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        imageDisplay.image = image
     }
 
     override func didReceiveMemoryWarning() {
