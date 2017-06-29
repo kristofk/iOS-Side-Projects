@@ -16,7 +16,11 @@ class ColorVC: UIViewController {
     @IBOutlet var greenValue: UILabel!
     @IBOutlet var blueValue: UILabel!
     
+    @IBAction func cancelTap(_ sender: UITapGestureRecognizer) {
+    }
     
+    @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
+    }
     
     
     
