@@ -11,6 +11,15 @@ import SwiftyCam
 
 class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
 
+    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
+        let colorView = ColorVC(image: photo)
+        self.addChildViewController(colorView)
+        self.view.addSubview(colorView.view)
+        print("ColorView tag: \(colorView.view.tag)")
+    }
+    
+    
+    
     func addCaptureButton() {
         let buttonFrame = CGRect(x: view.frame.midX - 37.5, y: view.frame.height - 100.0, width: 75.0, height: 75.0)
         let captureButton = SwiftyCamButton(frame: buttonFrame)
