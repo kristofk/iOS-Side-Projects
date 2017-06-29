@@ -41,4 +41,3 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate {
 
 
 }
-
