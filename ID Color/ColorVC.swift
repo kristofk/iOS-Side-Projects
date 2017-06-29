@@ -10,6 +10,21 @@ import UIKit
 
 class ColorVC: UIViewController {
 
+    @IBOutlet var imageDisplay: UIImageView!
+    @IBOutlet var colorViewer: UILabel!
+    @IBOutlet var redValue: UILabel!
+    @IBOutlet var greenValue: UILabel!
+    @IBOutlet var blueValue: UILabel!
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,6 +37,14 @@ class ColorVC: UIViewController {
     }
     
 
+    
+    
+    
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

@@ -12,6 +12,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ColorVC" customModule="ID_Color" customModuleProvider="target">
             <connections>
+                <outlet property="blueValue" destination="bG8-8p-kUH" id="hTW-gh-iZB"/>
+                <outlet property="colorViewer" destination="hQT-kS-A1b" id="HEl-zk-2j4"/>
+                <outlet property="greenValue" destination="ewV-me-Gth" id="k4U-Rh-A6g"/>
+                <outlet property="imageDisplay" destination="Ih9-s9-5Pa" id="jto-bC-tuK"/>
+                <outlet property="redValue" destination="w6V-Yh-som" id="zvD-xI-aY9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
