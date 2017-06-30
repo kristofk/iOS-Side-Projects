@@ -20,6 +20,7 @@ class ColorVC: UIViewController {
     @IBOutlet var blueValue: UILabel!
     @IBOutlet var cancelView: UIImageView!
     @IBOutlet var xButton: UIButton!
+    @IBOutlet var saveButton: UIButton!
     let image: UIImage
     
     
@@ -28,14 +29,18 @@ class ColorVC: UIViewController {
     @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
             let location = sender.location(in: imageDisplay)
+            print("Location: \(location)")
             let widthFactor = image.size.width / imageDisplay.frame.width
             let heightFactor = image.size.height / imageDisplay.frame.height
             
             let scaledWidth = location.x * widthFactor
             let scaledHeight = location.y * heightFactor
             let scaledLocation = CGPoint(x: scaledWidth, y: scaledHeight)
+            print("Scaled location: \(scaledLocation)")
             
-            let colorAtLocation = image.getPixelColor(pos: scaledLocation)
+//            let colorAtLocation = image.getPixelColor(pos: scaledLocation)
+//            let colorAtLocation = imageDisplay.image!.getPixelColor(pos: scaledLocation)
+            let colorAtLocation = imageDisplay.getPixelColorAt(point: location)
             let rgbValues = colorAtLocation.rgb()
             let rValue = rgbValues!.red
             let gValue = rgbValues!.green
@@ -51,6 +56,19 @@ class ColorVC: UIViewController {
     @IBAction func xPress(_ sender: UIButton) {
         removeSubView()
     }
+    
+    @IBAction func save(_ sender: UIButton) {
+        let imageData = UIImageJPEGRepresentation(imageDisplay.image!, 0)
+        let compressedJPGImage = UIImage(data: imageData!)
+        UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
+        
+        let alert = UIAlertView(title: "Wow",
+                                message: "Your image has been saved to Photo Library!",
+                                delegate: nil,
+                                cancelButtonTitle: "Ok")
+        alert.show()
+    }
+    
     
     // MARK: - init
     init(image: UIImage) {
@@ -69,9 +87,9 @@ class ColorVC: UIViewController {
         
         imageDisplay.image = image
         xButton.setImage(#imageLiteral(resourceName: "cancel"), for: .normal)
-//        print("Image size in points: \(image.size.width) x \(image.size.height)")
-//        print("Image size in pixels: \(image.size.width * image.scale) x \(image.size.height * image.scale)")
-//        print("Image display size: \(imageDisplay.frame.width) x \(imageDisplay.frame.height)")
+        saveButton.setImage(#imageLiteral(resourceName: "save"), for: .normal)
+        print("Size: \(imageDisplay.frame.width) x \(imageDisplay.frame.height)")
+//        imageDisplay.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
     }
 
     override func didReceiveMemoryWarning() {
