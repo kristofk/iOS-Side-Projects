@@ -6,11 +6,21 @@
 //  Copyright © 2017. Kristof Kocsis. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-
 extension UIImage {
+    
+    /**
+     
+     Returns the color of the pixel of the image at the given position.
+     NO USE FOR IT IN THIS PROJECT, KEPT IT JUST IN CASE
+     
+     - parameter pos: The position in CGPoint that determines the pixel the color of which we want returned.
+     
+     - returns: The color of the pixel in UIColor class.
+     
+     */
+    
     public func getPixelColor(pos: CGPoint) -> UIColor {
         
         let pixelData = self.cgImage!.dataProvider!.data
@@ -25,12 +35,17 @@ extension UIImage {
         
         return UIColor(red: r, green: g, blue: b, alpha: a)
     }
-    
-    
 }
 
 extension UIColor {
     
+    /**
+     
+     Returns the R, G, B, and A values from a UIColor instance.
+     
+     - returns: Int between 0...255 OR nil if an error occured
+     
+     */
     public func rgb() -> (red:Int, green:Int, blue:Int, alpha:Int)? {
         var fRed : CGFloat = 0
         var fGreen : CGFloat = 0
@@ -52,6 +67,16 @@ extension UIColor {
 
 
 extension UIImageView {
+    
+    /**
+     Returns the color of the pixel at a given point.
+     
+     - parameter point: Specifies the position of the pixel returned.
+     
+     - returns: the UIColor of the given pixel
+     
+     */
+    
     func getPixelColorAt(point:CGPoint) -> UIColor{
         
         let pixel = UnsafeMutablePointer<CUnsignedChar>.allocate(capacity: 4)
@@ -70,6 +95,19 @@ extension UIImageView {
         return color
     }
 }
+
+/**
+ 
+ Returns the color of the pixel at a given point from any Class that inherites from UIView.
+ THIS FUNCTION DOESN'T HAVE A USE IN THIS PROJECT, JUST KEPT IT FOR SCALEBILITY.
+ 
+ - parameter point: Specifies the location of the point from which the Color will be returned.
+ 
+ - parameter sourceView: Specifies the View or any other subclass of view that displays the image.
+ 
+ - returns: the UIColor of the given pixel.
+ 
+ */
 
 func getPixelColorAtPoint(point:CGPoint, sourceView: UIView) -> UIColor{
     
