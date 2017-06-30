@@ -146,14 +146,14 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="eXs-Oz-QTf" secondAttribute="trailing" constant="16" id="5fi-Ll-3to"/>
+                <constraint firstItem="Ih9-s9-5Pa" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="6DS-W4-TWb"/>
                 <constraint firstItem="naZ-Ko-oXj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="9Bm-K6-PPW"/>
                 <constraint firstItem="ev0-Bp-FAa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="9Cn-bE-onX"/>
+                <constraint firstItem="Ih9-s9-5Pa" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="9bM-l0-X3z"/>
                 <constraint firstAttribute="bottom" secondItem="ev0-Bp-FAa" secondAttribute="bottom" constant="20" id="IjX-OF-4iT"/>
                 <constraint firstAttribute="bottom" secondItem="eXs-Oz-QTf" secondAttribute="bottom" constant="20" id="N2e-rt-S76"/>
-                <constraint firstItem="Ih9-s9-5Pa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="OEk-NV-cxs"/>
-                <constraint firstItem="Ih9-s9-5Pa" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="Uzf-0P-UiN"/>
-                <constraint firstItem="Ih9-s9-5Pa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="kuP-UL-9ai"/>
-                <constraint firstItem="Ih9-s9-5Pa" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="lia-be-hfg"/>
+                <constraint firstItem="Ih9-s9-5Pa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZHt-bK-L3x"/>
+                <constraint firstItem="Ih9-s9-5Pa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c2u-g3-Wpb"/>
                 <constraint firstItem="naZ-Ko-oXj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="s11-gg-f6B"/>
             </constraints>
             <point key="canvasLocation" x="25.5" y="51.5"/>
