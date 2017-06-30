@@ -69,6 +69,7 @@ extension UIColor {
 extension UIImageView {
     
     /**
+     
      Returns the color of the pixel at a given point.
      
      - parameter point: Specifies the position of the pixel returned.

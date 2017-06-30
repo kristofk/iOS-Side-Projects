@@ -11,15 +11,32 @@ import SwiftyCam
 
 class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
+    
+    // MARK: - SiwftyCam functions
+    
+    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
+        IDColor(photo: photo)
+    }
+    
+    
+    //MARK: - Custom functions
+    
+    /**
+     
+     Brings up the ColorVC view with the desired picture.
+     
+     - parameter photo: The picture that will be displayed in the new view
+     
+     */
+    
     func IDColor(photo: UIImage) {
         let colorView = ColorVC(image: photo)
         self.addChildViewController(colorView)
         self.view.addSubview(colorView.view)
         print("ColorView tag: \(colorView.view.tag)")
     }
-    func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
-        IDColor(photo: photo)
-    }
+
+    /// Adds the default SwiftyCam capture button to the view.
     
     func addCaptureButton() {
         let captureButtonFrame = CGRect(x: view.frame.midX - 37.5, y: view.frame.height - 100.0, width: 75.0, height: 75.0)
@@ -28,6 +45,8 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
         captureButton.setImage(#imageLiteral(resourceName: "focus"), for: .normal)
         captureButton.delegate = self
     }
+    
+    /// Adds a media selector button that opens up Photo Library
     
     func addMediaButton() {
         let mediaButtonFrame = CGRect(x: 50, y: view.frame.height - 100.0, width: 44, height: 44)
@@ -39,6 +58,14 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
         self.view.addSubview(button)
     }
     
+    /**
+     
+     This is the function called by the media button. It opens up the Photo Library.
+     
+     - parameter sender: Speifies the sender that calls this function. THIS ISN'T IMPORTANT FOR THE FUNCTIONING OF THE FUNCTION.
+     
+     */
+    
     func mediaButtonAction(sender: UIButton!) {
         if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
             let imagePicker = UIImagePickerController()
@@ -49,9 +76,10 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
         }
     }
     
+    /// When the user selected a picture this function is called to return the picture.
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-//            imagePost.image = image
             IDColor(photo: image)
         } else{
             print("Something went wrong")
@@ -59,6 +87,9 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
         
         self.dismiss(animated: true, completion: nil)
     }
+    
+    
+    // MARK: - VeiwController finctions
     
     override func viewDidLoad() {
         super.viewDidLoad()

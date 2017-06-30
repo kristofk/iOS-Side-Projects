@@ -29,18 +29,9 @@ class ColorVC: UIViewController {
     @IBAction func imageTap(_ sender: UITapGestureRecognizer) {
         if sender.state == .ended {
             let location = sender.location(in: imageDisplay)
-            print("Location: \(location)")
-            let widthFactor = image.size.width / imageDisplay.frame.width
-            let heightFactor = image.size.height / imageDisplay.frame.height
-            
-            let scaledWidth = location.x * widthFactor
-            let scaledHeight = location.y * heightFactor
-            let scaledLocation = CGPoint(x: scaledWidth, y: scaledHeight)
-            print("Scaled location: \(scaledLocation)")
-            
-//            let colorAtLocation = image.getPixelColor(pos: scaledLocation)
-//            let colorAtLocation = imageDisplay.image!.getPixelColor(pos: scaledLocation)
+
             let colorAtLocation = imageDisplay.getPixelColorAt(point: location)
+            
             let rgbValues = colorAtLocation.rgb()
             let rValue = rgbValues!.red
             let gValue = rgbValues!.green
@@ -62,15 +53,13 @@ class ColorVC: UIViewController {
         let compressedJPGImage = UIImage(data: imageData!)
         UIImageWriteToSavedPhotosAlbum(compressedJPGImage!, nil, nil, nil)
         
-        let alert = UIAlertView(title: "Wow",
-                                message: "Your image has been saved to Photo Library!",
-                                delegate: nil,
-                                cancelButtonTitle: "Ok")
-        alert.show()
+        let message = UIAlertController(title: "Saved successfully", message: "The image has been saved to your photo library", preferredStyle: .alert)
+        message.show(self, sender: sender)
     }
     
     
     // MARK: - init
+    
     init(image: UIImage) {
         self.image = image
         super.init(nibName: nil, bundle: nil)
@@ -88,29 +77,18 @@ class ColorVC: UIViewController {
         imageDisplay.image = image
         xButton.setImage(#imageLiteral(resourceName: "cancel"), for: .normal)
         saveButton.setImage(#imageLiteral(resourceName: "save"), for: .normal)
-        print("Size: \(imageDisplay.frame.width) x \(imageDisplay.frame.height)")
-//        imageDisplay.frame = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    /// Removes the ColorVC view form the main view.
     
     func removeSubView() {
         let remView = self.view.viewWithTag(0)
         remView?.removeFromSuperview()
     }
     
-  
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
