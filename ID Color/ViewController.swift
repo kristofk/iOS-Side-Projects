@@ -39,7 +39,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
     /// Adds the default SwiftyCam capture button to the view.
     
     func addCaptureButton() {
-        let captureButtonFrame = CGRect(x: view.frame.midX - 37.5, y: view.frame.height - 100.0, width: 75.0, height: 75.0)
+        let captureButtonFrame = CGRect(x: view.frame.midX - 37.5, y: view.frame.height - 110.0, width: 75.0, height: 75.0)
         let captureButton = SwiftyCamButton(frame: captureButtonFrame)
         self.view.addSubview(captureButton)
         captureButton.setImage(#imageLiteral(resourceName: "focus"), for: .normal)
@@ -49,7 +49,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
     /// Adds a media selector button that opens up Photo Library
     
     func addMediaButton() {
-        let mediaButtonFrame = CGRect(x: 50, y: view.frame.height - 100.0, width: 44, height: 44)
+        let mediaButtonFrame = CGRect(x: view.frame.midX - 22, y: view.frame.height - 45, width: 44, height: 44)
         let button = UIButton(frame: mediaButtonFrame)
         
         button.setImage(#imageLiteral(resourceName: "media"), for: .normal)
