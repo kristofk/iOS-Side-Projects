@@ -98,6 +98,8 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
         cameraDelegate = self
         addCaptureButton()
         addMediaButton()
+        
+        createAdMobBannerView(request: createAdMobRequest())
     }
 
     override func didReceiveMemoryWarning() {
