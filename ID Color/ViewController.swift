@@ -8,8 +8,9 @@
 
 import UIKit
 import SwiftyCam
+import GoogleMobileAds
 
-class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GADBannerViewDelegate {
 
     
     // MARK: - SiwftyCam functions
@@ -89,7 +90,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
     }
     
     
-    // MARK: - VeiwController finctions
+    // MARK: - VeiwController functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +103,11 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    // MARK: - AdMob func
+    func createAdMobBannerView{
+        
     }
 
 
