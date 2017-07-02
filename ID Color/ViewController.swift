@@ -106,8 +106,25 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
     }
     
     // MARK: - AdMob func
-    func createAdMobBannerView{
+    
+    func createAdMobRequest() -> GADRequest {
+        let request = GADRequest()
+        request.testDevices = [ kGADSimulatorID, "c4868a24863d9af44e24cd3aff515a37"]
         
+        return request
+    }
+    
+    func createAdMobBannerView(request: GADRequest) {
+        var bannerView: GADBannerView!
+        
+        bannerView = GADBannerView(adSize: kGADAdSizeFullBanner)
+        self.view.addSubview(bannerView)
+        bannerView.rootViewController = self
+        
+        bannerView.adUnitID = "ca-app-pub-5958170520650541/7129119711"//"ca-app-pub-3940256099942544/2934735716"
+        
+        bannerView.load(request)
+        bannerView.delegate = self
     }
 
 
