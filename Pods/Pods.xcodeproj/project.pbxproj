@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		17C6A9B26840D1EABC68EDD5667FA4DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		1D4F54583080459426D39D3DD07AA7B7 /* SwiftyCam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F260082CD9E9D6306D7F71482C3CE01 /* SwiftyCam-dummy.m */; };
-		1DDDE4865520ADB543D68FB46D3B72D3 /* SwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CD94B353A3FC408FD1DDA00ED95410 /* SwiftyCamViewControllerDelegate.swift */; };
-		267975784F497ADBF70F74D21AF830B5 /* SwiftyCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1142CBED6622372D315746E5D725B1E /* SwiftyCamViewController.swift */; };
+		1D4F54583080459426D39D3DD07AA7B7 /* SwiftyCam-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 283366B4E27F2B3134761B1437DB74C7 /* SwiftyCam-dummy.m */; };
+		1DDDE4865520ADB543D68FB46D3B72D3 /* SwiftyCamViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDB1A8682ED030A9472D07E71312E4 /* SwiftyCamViewControllerDelegate.swift */; };
+		267975784F497ADBF70F74D21AF830B5 /* SwiftyCamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A61CDB96A7669F031718BC10A49E489 /* SwiftyCamViewController.swift */; };
 		5FB4975F6B338F148E85E93464B990F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		816F604CEE0929C1ACA8268F4B85289E /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F787EEDE14A5EFCDCC911F70F08534F /* PreviewView.swift */; };
+		816F604CEE0929C1ACA8268F4B85289E /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD31E0BCF3C8660E608D18AB455074B /* PreviewView.swift */; };
 		9D372C5803D4D00E50EBB8A92743037F /* Pods-ID Color-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 104E757821331F295FFBFD8D6F3A44A6 /* Pods-ID Color-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F7350FF5182EF61EDAD3E898ACC23E5 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E29E40F6235AC4CFA8CF4A2109ADF7C /* SwiftyCamButton.swift */; };
+		9F7350FF5182EF61EDAD3E898ACC23E5 /* SwiftyCamButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2466DAF6926F4C8663658A99F463290 /* SwiftyCamButton.swift */; };
 		BBAA86478CF21F2780D7C331DF7C76D9 /* Pods-ID Color-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 816D8652CDC89132B09031B163F65D61 /* Pods-ID Color-dummy.m */; };
-		FB63ED5E829432E1F935292B46E4AFD3 /* SwiftyCam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6480079F16B172BC91863C932BE8D2F7 /* SwiftyCam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB63ED5E829432E1F935292B46E4AFD3 /* SwiftyCam-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 912BFA49C41E85A398436B26582336AB /* SwiftyCam-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,30 +30,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08FDB1A8682ED030A9472D07E71312E4 /* SwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamViewControllerDelegate.swift; path = Source/SwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
+		0FF92364E592A2540D1C05E48F5C7263 /* SwiftyCam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyCam.modulemap; sourceTree = "<group>"; };
 		104E757821331F295FFBFD8D6F3A44A6 /* Pods-ID Color-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ID Color-umbrella.h"; sourceTree = "<group>"; };
 		1460F3AC00407F0B132066F17B727854 /* Pods_ID_Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ID_Color.framework; path = "Pods-ID Color.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15609CD55D5AA6B2505B1F080333F6F1 /* Pods-ID Color.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ID Color.release.xcconfig"; sourceTree = "<group>"; };
+		283366B4E27F2B3134761B1437DB74C7 /* SwiftyCam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyCam-dummy.m"; sourceTree = "<group>"; };
 		2876843FEC30CA119FE1C2A90FF1790D /* Pods-ID Color-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ID Color-acknowledgements.plist"; sourceTree = "<group>"; };
 		3561D338869DCCB730DBB5FB90BFDF6D /* Pods-ID Color.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ID Color.modulemap"; sourceTree = "<group>"; };
 		3CECB75E35A2C4DDF027B72C26BD6B22 /* Pods-ID Color-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ID Color-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3F260082CD9E9D6306D7F71482C3CE01 /* SwiftyCam-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyCam-dummy.m"; sourceTree = "<group>"; };
-		4A11E64F959EAA086856E03B6D50FB92 /* SwiftyCam.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyCam.xcconfig; sourceTree = "<group>"; };
-		6480079F16B172BC91863C932BE8D2F7 /* SwiftyCam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-umbrella.h"; sourceTree = "<group>"; };
+		417CAF83E20E778E690B82FAE29F5202 /* SwiftyCam-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		7B1A3F4DB5FBFABAF5C70AF5B6B0D04C /* SwiftyCam.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyCam.modulemap; sourceTree = "<group>"; };
-		7E29E40F6235AC4CFA8CF4A2109ADF7C /* SwiftyCamButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamButton.swift; path = Source/SwiftyCamButton.swift; sourceTree = "<group>"; };
+		6AD31E0BCF3C8660E608D18AB455074B /* PreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewView.swift; path = Source/PreviewView.swift; sourceTree = "<group>"; };
+		7A61CDB96A7669F031718BC10A49E489 /* SwiftyCamViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamViewController.swift; path = Source/SwiftyCamViewController.swift; sourceTree = "<group>"; };
 		816D8652CDC89132B09031B163F65D61 /* Pods-ID Color-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ID Color-dummy.m"; sourceTree = "<group>"; };
-		8A580282FE8C6ACB0CF326D55341D67B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F787EEDE14A5EFCDCC911F70F08534F /* PreviewView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PreviewView.swift; path = Source/PreviewView.swift; sourceTree = "<group>"; };
+		912BFA49C41E85A398436B26582336AB /* SwiftyCam-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-umbrella.h"; sourceTree = "<group>"; };
 		924BE9EFD351EDF12A78DBDBFFA31A10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		99CD94B353A3FC408FD1DDA00ED95410 /* SwiftyCamViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamViewControllerDelegate.swift; path = Source/SwiftyCamViewControllerDelegate.swift; sourceTree = "<group>"; };
 		9EF086EAF4244D2380D4713118BEE146 /* Pods-ID Color.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ID Color.debug.xcconfig"; sourceTree = "<group>"; };
-		B1142CBED6622372D315746E5D725B1E /* SwiftyCamViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamViewController.swift; path = Source/SwiftyCamViewController.swift; sourceTree = "<group>"; };
-		B2CE3DC3C379CA2D649EF17291B506A6 /* SwiftyCam-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyCam-prefix.pch"; sourceTree = "<group>"; };
+		B2466DAF6926F4C8663658A99F463290 /* SwiftyCamButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyCamButton.swift; path = Source/SwiftyCamButton.swift; sourceTree = "<group>"; };
 		BE933F9666195A2C25BA54D81F7B3DB9 /* Pods-ID Color-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ID Color-frameworks.sh"; sourceTree = "<group>"; };
 		C77B88AC345925F30280BEAEA2BB567E /* Pods-ID Color-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ID Color-resources.sh"; sourceTree = "<group>"; };
+		D25307A1E7B28481DC5D2E901192E3DC /* SwiftyCam.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyCam.xcconfig; sourceTree = "<group>"; };
 		DE7474BE4B4F46A459984C2E80A9C009 /* SwiftyCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyCam.framework; path = SwiftyCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0E83B735BF365965F8BE708A324D09D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3BE8F3AED010958C370DA3FBD00D9A6 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,27 +77,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AAB137789309075370324EFADEA4FFD /* SwiftyCam */ = {
-			isa = PBXGroup;
-			children = (
-				8F787EEDE14A5EFCDCC911F70F08534F /* PreviewView.swift */,
-				7E29E40F6235AC4CFA8CF4A2109ADF7C /* SwiftyCamButton.swift */,
-				B1142CBED6622372D315746E5D725B1E /* SwiftyCamViewController.swift */,
-				99CD94B353A3FC408FD1DDA00ED95410 /* SwiftyCamViewControllerDelegate.swift */,
-				83574DFCF9BBF7F96E7560A429B5EF23 /* Support Files */,
-			);
-			name = SwiftyCam;
-			path = SwiftyCam;
-			sourceTree = "<group>";
-		};
-		0B908D219F50293D5D6C12BD5B2B02E5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				0AAB137789309075370324EFADEA4FFD /* SwiftyCam */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		10560172C1092B6F2DB51B6BDCD18F68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,29 +94,60 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		427B9509AD4947D3ACA4A3C373A1F4F8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0E83B735BF365965F8BE708A324D09D /* Info.plist */,
+				0FF92364E592A2540D1C05E48F5C7263 /* SwiftyCam.modulemap */,
+				D25307A1E7B28481DC5D2E901192E3DC /* SwiftyCam.xcconfig */,
+				283366B4E27F2B3134761B1437DB74C7 /* SwiftyCam-dummy.m */,
+				417CAF83E20E778E690B82FAE29F5202 /* SwiftyCam-prefix.pch */,
+				912BFA49C41E85A398436B26582336AB /* SwiftyCam-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyCam";
+			sourceTree = "<group>";
+		};
+		681E4F663447029E27FF2D2FF71815D8 /* SwiftyCam */ = {
+			isa = PBXGroup;
+			children = (
+				6AD31E0BCF3C8660E608D18AB455074B /* PreviewView.swift */,
+				B2466DAF6926F4C8663658A99F463290 /* SwiftyCamButton.swift */,
+				7A61CDB96A7669F031718BC10A49E489 /* SwiftyCamViewController.swift */,
+				08FDB1A8682ED030A9472D07E71312E4 /* SwiftyCamViewControllerDelegate.swift */,
+				427B9509AD4947D3ACA4A3C373A1F4F8 /* Support Files */,
+			);
+			name = SwiftyCam;
+			path = SwiftyCam;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				0B908D219F50293D5D6C12BD5B2B02E5 /* Pods */,
+				8F8CA86AC1C72A976D434FB156D7F269 /* Pods */,
 				10560172C1092B6F2DB51B6BDCD18F68 /* Products */,
 				300019E0FEC3A3EA7E08F3C0D026F631 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		83574DFCF9BBF7F96E7560A429B5EF23 /* Support Files */ = {
+		89574356A1622148E578C4061E4B81D2 /* Google-Mobile-Ads-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				8A580282FE8C6ACB0CF326D55341D67B /* Info.plist */,
-				7B1A3F4DB5FBFABAF5C70AF5B6B0D04C /* SwiftyCam.modulemap */,
-				4A11E64F959EAA086856E03B6D50FB92 /* SwiftyCam.xcconfig */,
-				3F260082CD9E9D6306D7F71482C3CE01 /* SwiftyCam-dummy.m */,
-				B2CE3DC3C379CA2D649EF17291B506A6 /* SwiftyCam-prefix.pch */,
-				6480079F16B172BC91863C932BE8D2F7 /* SwiftyCam-umbrella.h */,
+				FA7A99E7CA29ADB2372BEC4C819BCF75 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyCam";
+			name = "Google-Mobile-Ads-SDK";
+			path = "Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		8F8CA86AC1C72A976D434FB156D7F269 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89574356A1622148E578C4061E4B81D2 /* Google-Mobile-Ads-SDK */,
+				681E4F663447029E27FF2D2FF71815D8 /* SwiftyCam */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -171,6 +182,14 @@
 			);
 			name = "Pods-ID Color";
 			path = "Target Support Files/Pods-ID Color";
+			sourceTree = "<group>";
+		};
+		FA7A99E7CA29ADB2372BEC4C819BCF75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3BE8F3AED010958C370DA3FBD00D9A6 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +398,7 @@
 		};
 		3D48F9C93A77F1CDEFDFBAAC51B55D5E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A11E64F959EAA086856E03B6D50FB92 /* SwiftyCam.xcconfig */;
+			baseConfigurationReference = D25307A1E7B28481DC5D2E901192E3DC /* SwiftyCam.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -413,7 +432,7 @@
 		};
 		41560EDD47F89530CF62619792F10CE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A11E64F959EAA086856E03B6D50FB92 /* SwiftyCam.xcconfig */;
+			baseConfigurationReference = D25307A1E7B28481DC5D2E901192E3DC /* SwiftyCam.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

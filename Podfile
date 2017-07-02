@@ -7,5 +7,5 @@ target 'ID Color' do
 
   # Pods for ID Color
 pod “SwiftyCam”
-
+pod 'Google-Mobile-Ads-SDK'
 end
