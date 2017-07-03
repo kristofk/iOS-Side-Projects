@@ -11,7 +11,7 @@ import GoogleMobileAds
 
 // MARK: - AdMob func
 
-public class AbMob_ad {
+public class AdMob_ad {
     let request: GADRequest
     let adView: GADBannerView
     

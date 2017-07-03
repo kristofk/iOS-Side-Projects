@@ -127,7 +127,7 @@
                     </subviews>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naZ-Ko-oXj">
-                    <rect key="frame" x="16" y="20" width="30" height="30"/>
+                    <rect key="frame" x="16" y="80" width="30" height="30"/>
                     <connections>
                         <action selector="xPress:" destination="-1" eventType="touchUpInside" id="nET-7G-6jZ"/>
                     </connections>
@@ -147,13 +147,13 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="eXs-Oz-QTf" secondAttribute="trailing" constant="16" id="5fi-Ll-3to"/>
                 <constraint firstItem="Ih9-s9-5Pa" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="6DS-W4-TWb"/>
-                <constraint firstItem="naZ-Ko-oXj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="9Bm-K6-PPW"/>
                 <constraint firstItem="ev0-Bp-FAa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="9Cn-bE-onX"/>
                 <constraint firstItem="Ih9-s9-5Pa" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="9bM-l0-X3z"/>
                 <constraint firstAttribute="bottom" secondItem="ev0-Bp-FAa" secondAttribute="bottom" constant="20" id="IjX-OF-4iT"/>
                 <constraint firstAttribute="bottom" secondItem="eXs-Oz-QTf" secondAttribute="bottom" constant="20" id="N2e-rt-S76"/>
                 <constraint firstItem="Ih9-s9-5Pa" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ZHt-bK-L3x"/>
                 <constraint firstItem="Ih9-s9-5Pa" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="c2u-g3-Wpb"/>
+                <constraint firstItem="naZ-Ko-oXj" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="rGx-W6-EeB"/>
                 <constraint firstItem="naZ-Ko-oXj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="s11-gg-f6B"/>
             </constraints>
             <point key="canvasLocation" x="25.5" y="51.5"/>

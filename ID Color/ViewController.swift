@@ -12,14 +12,14 @@ import GoogleMobileAds
 
 class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GADBannerViewDelegate {
 
-    
+    let ad = AdMob_ad()
     
     
     // MARK: - SiwftyCam functions
     
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
         IDColor(photo: photo)
-        self.view.bringSubview(toFront: ad) // FIXME: AdMob subview
+        self.view.bringSubview(toFront: ad.adView)
     }
     
     
@@ -101,7 +101,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
         cameraDelegate = self
         addCaptureButton()
         addMediaButton()
-        let ad = AdMob_ad()
+        ad.displayAd(on: self)
 //        adView = createAdMobBannerView(with: createAdMobRequest(), in: self) // FIXME: ad functioins here
     }
 
