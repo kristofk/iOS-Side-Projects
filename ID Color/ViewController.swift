@@ -13,10 +13,13 @@ import GoogleMobileAds
 class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GADBannerViewDelegate {
 
     
+    
+    
     // MARK: - SiwftyCam functions
     
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
         IDColor(photo: photo)
+        self.view.bringSubview(toFront: ad) // FIXME: AdMob subview
     }
     
     
@@ -98,8 +101,8 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
         cameraDelegate = self
         addCaptureButton()
         addMediaButton()
-        
-        createAdMobBannerView(request: createAdMobRequest())
+        let ad = AdMob_ad()
+//        adView = createAdMobBannerView(with: createAdMobRequest(), in: self) // FIXME: ad functioins here
     }
 
     override func didReceiveMemoryWarning() {
@@ -107,27 +110,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
         // Dispose of any resources that can be recreated.
     }
     
-    // MARK: - AdMob func
     
-    func createAdMobRequest() -> GADRequest {
-        let request = GADRequest()
-        request.testDevices = [ kGADSimulatorID, "c4868a24863d9af44e24cd3aff515a37"]
-        
-        return request
-    }
-    
-    func createAdMobBannerView(request: GADRequest) {
-        var bannerView: GADBannerView!
-        
-        bannerView = GADBannerView(adSize: kGADAdSizeFullBanner)
-        self.view.addSubview(bannerView)
-        bannerView.rootViewController = self
-        
-        bannerView.adUnitID = "ca-app-pub-5958170520650541/7129119711"//"ca-app-pub-3940256099942544/2934735716"
-        
-        bannerView.load(request)
-        bannerView.delegate = self
-    }
 
 
 }
