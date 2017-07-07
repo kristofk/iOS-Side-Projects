@@ -77,6 +77,8 @@ class ColorVC: UIViewController {
         imageDisplay.image = image
         xButton.setImage(#imageLiteral(resourceName: "cancel"), for: .normal)
         saveButton.setImage(#imageLiteral(resourceName: "save"), for: .normal)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

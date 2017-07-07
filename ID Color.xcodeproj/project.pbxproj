@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		358C1C151F0AA512009CE5B3 /* AdMob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355036131F0A3606001D0FF9 /* AdMob.swift */; };
 		358EB9231F0511D000383D67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358EB9221F0511D000383D67 /* AppDelegate.swift */; };
 		358EB9251F0511D000383D67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358EB9241F0511D000383D67 /* ViewController.swift */; };
 		358EB9281F0511D000383D67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 358EB9261F0511D000383D67 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		355036131F0A3606001D0FF9 /* AdMob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdMob.swift; sourceTree = "<group>"; };
 		358EB91F1F0511D000383D67 /* ID Color.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ID Color.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		358EB9221F0511D000383D67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		358EB9241F0511D000383D67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				358EB9241F0511D000383D67 /* ViewController.swift */,
 				358EB9521F05257500383D67 /* ColorVC.swift */,
 				358EB9531F05257500383D67 /* ColorVC.xib */,
+				355036131F0A3606001D0FF9 /* AdMob.swift */,
 				358EB9561F0543D400383D67 /* Extensions.swift */,
 				358EB9261F0511D000383D67 /* Main.storyboard */,
 				358EB9291F0511D000383D67 /* Assets.xcassets */,
@@ -225,6 +228,7 @@
 				358EB9251F0511D000383D67 /* ViewController.swift in Sources */,
 				358EB9231F0511D000383D67 /* AppDelegate.swift in Sources */,
 				358EB9541F05257500383D67 /* ColorVC.swift in Sources */,
+				358C1C151F0AA512009CE5B3 /* AdMob.swift in Sources */,
 				358EB9571F0543D400383D67 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

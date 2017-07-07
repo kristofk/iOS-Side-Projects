@@ -8,14 +8,18 @@
 
 import UIKit
 import SwiftyCam
+import GoogleMobileAds
 
-class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, GADBannerViewDelegate {
 
+    let ad = AdMob_ad()
+    
     
     // MARK: - SiwftyCam functions
     
     func swiftyCam(_ swiftyCam: SwiftyCamViewController, didTake photo: UIImage) {
         IDColor(photo: photo)
+        self.view.bringSubview(toFront: ad.adView)
     }
     
     
@@ -89,7 +93,7 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
     }
     
     
-    // MARK: - VeiwController finctions
+    // MARK: - VeiwController functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -97,12 +101,16 @@ class ViewController: SwiftyCamViewController, SwiftyCamViewControllerDelegate, 
         cameraDelegate = self
         addCaptureButton()
         addMediaButton()
+        ad.displayAd(on: self)
+//        adView = createAdMobBannerView(with: createAdMobRequest(), in: self) // FIXME: ad functioins here
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
 
 }
