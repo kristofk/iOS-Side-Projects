@@ -19,4 +19,41 @@ The project utilizes multiple views across multiple files.
 ## Files containing code
 1. **AdMob.swift**: this file contains the custom class for Google's banner ad used throughout the app.
 2. **AppDelegate.swift**: the only change in this file is the initialization of the Google-Mobile-Ads-SDK framework.
-3. **ColorVC.swift**: this is the ViewController file of ColorVC.xib. The file contains code for the 
+3. **ColorVC.swift**: this is the ViewController file of ColorVC.xib. The file contains code for the color recognition at a certain point.
+4. **Extensions.swift**: this file contains all the Extensions for the Classes that are used. In this file you can find the Color extraction from a point both for UIImage and UIImageView, and the extraction of RGB color values from UIColor.
+5. **ViewController.swift**: this is the main ViewController. It contains the code for the camera and taking picture via the SwiftyCam framework.
+
+
+## Extensions:
+
+
+### UIImage
+
+* **getPixelColor(pos: CGPoint) -> UIColor** <br>
+**Input**: <br>
+*pos: CGPoint*: This is the position from where the function retrieves the UIColor from. <br>
+**Return**:
+The funtion return the color of the selected pixel in UIColor class. <br>
+**Description**:
+This function is self explanatory. The code returns the UIColor of the picture in the instance at CGPoint. This function isn't used in the project. It is archived for further reference.
+
+### UIImageView
+
+* **getPixelColorAt(point: CGPoint) -> UIColor** <br>
+**Input**: <br>
+*point: CGPoint*: This determines which pixel the function is going to retrieve the color from.
+ <br>
+**Return**:
+The color of the selected pixel is returned in UI Color. <br>
+**Description**:
+This function does the same as the one for the UIImage but this works without an Image in the instance since it returns the color displayed in the UIImageView which is by default white.
+
+### UIColor
+
+* **rgb() -> (red: Int, green: Int, blue: Int, alpha: Int)** <br>
+**Input**: N/A <br>
+**Return**:
+This function return a tuple containing the R, G, B and A values.
+
+## Further updates
+Zooming in the UIImage via the UIImageView.
