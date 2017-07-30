@@ -12,8 +12,8 @@ ColorID or IDColor is a closed source personal project by Kristof Kocsis and is 
 
 ## Frameworks
 The project includes 2 frameworks both of witch were imported via CocoaPods.
-1.  SwiftyCam: This is the core of the project. SwiftyCam is responsible for the camera feed. | Link to SwiftyCam: https://github.com/Awalz/SwiftyCam
-2. Google-Mobile-Ads-SDK: This framework is responsible for the ads. The project uses only 1 ad, a banner on the top that is always the frontmost view.
+1. **SwiftyCam**: This is the core of the project. SwiftyCam is responsible for the camera feed. | Link to SwiftyCam: https://github.com/Awalz/SwiftyCam
+2. **Google-Mobile-Ads-SDK**: This framework is responsible for the ads. The project uses only 1 ad, a banner on the top that is always the frontmost view.
 
 ---
 
@@ -34,7 +34,6 @@ The project utilizes multiple views across multiple files.
 ---
 
 ## Extensions
-
 
 ### UIImage
 
@@ -69,7 +68,7 @@ This function return a tuple containing the R, G, B and A values.
 ## Classes
 
 ### AdMob_Ad
-The name of the class doesn't exactly follow the Swift naming convenction, that would be: AdMobAd but imho my naming is more understandeble ad admob type ad. This class is responsible for maniging one ad. It has functions to support everything this project needs. The AdMob_Ad class is declared in the AdMob.swift file.
+The name of the class doesn't exactly follow the Swift naming connection, that would be: AdMobAd but imho my naming is more understandeble ad admob type ad. This class is responsible for managing one ad. It has functions to support everything this project needs. The AdMob_Ad class is declared in the AdMob.swift file.
 #### Functions
 * **displayAd(on view: ViewController)** <br>
 **Input**:<br>
@@ -80,14 +79,15 @@ The name of the class doesn't exactly follow the Swift naming convenction, that 
 ---
 
 ## ViewControllers
-There are 2 ViewController classes in the project. One for the main.storyboard and the otherone is for the ColorVC.xib.
+
+There are 2 ViewController classes in the project. One for the main.storyboard and the other one is for the ColorVC.xib.
 ### ViewController.swift
 This ViewController is for the Main.storyboard. The View is built up in the code via subviews both custom and from the SwiftyCam framework.
-
-
-
+###ColorVC.swift
+This is the ViewController for the ColorVC.xib file. In this ViewController the color recognition is used. You can tap on the image from this screen and save the picture.
 
 ---
 
 ## Further updates
-Zooming in the UIImage via the UIImageView.
+* Zooming in the UIImage via the UIImageView.
+* Disable double tap.
