@@ -3,7 +3,7 @@ This is a typical interactive story app.
 This game is based on the Build an Interactive Story App Course on Treehouse.
 
 This app uses the following data types:
- * linked list
+ * linked list
  * tree
  
 This project has the following features:
