@@ -5,9 +5,9 @@ class SearchResultsController: UITableViewController {
 	let searchController = UISearchController(searchResultsController: nil)
 	let dataSource = SearchResultsDataSource()
 	let client = ItunesAPIClient()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
 		
 		self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(SearchResultsController.dismissSearchResultsController))
 		
@@ -20,7 +20,7 @@ class SearchResultsController: UITableViewController {
 		searchController.searchResultsUpdater = self
 		
 		definesPresentationContext = true
-    }
+	}
 	
 	func dismissSearchResultsController() {
 		self.dismiss(animated: true, completion: nil)
@@ -49,9 +49,10 @@ extension SearchResultsController: UISearchResultsUpdating {
 	func updateSearchResults(for searchController: UISearchController) {
 		client.searchForArtists(withTerm: searchController.searchBar.text!) { [weak self] artists, error in
 			
-			// TODO: Handle error case
-			self?.dataSource.update(with: artists)
-			self?.tableView.reloadData()
+			if error == nil {
+				self?.dataSource.update(with: artists)
+				self?.tableView.reloadData()
+			}
 		}
 	}
 }
