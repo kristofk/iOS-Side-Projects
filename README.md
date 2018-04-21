@@ -17,3 +17,6 @@ An app that searches the iTunes store for alrtists, albums and songs.
 
 ## Stormy
 A weather app similar to the stock weather app on iOS. It uses the Dark Sky API.
+
+## Math progressions
+Cheating tool in high school. It can solve a specific math problem.
