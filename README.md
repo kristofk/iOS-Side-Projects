@@ -20,3 +20,6 @@ A weather app similar to the stock weather app on iOS. It uses the Dark Sky API.
 
 ## Math progressions
 Cheating tool in high school. It can solve a specific math problem.
+
+## iOS10 Calculator
+This is a detailed replica of the stock calculator from the iOS 10 days.
